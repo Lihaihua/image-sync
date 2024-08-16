@@ -29,4 +29,5 @@ jobs:
         run: |
           skopeo copy docker://docker.io/library/mysql:5.7 docker://registry.cn-hangzhou.aliyuncs.com/mark88015/mysql:5.7
           skopeo copy docker://docker.io/library/redis docker://registry.cn-hangzhou.aliyuncs.com/mark88015/redis:latest
+          skopeo copy docker://docker.io/library/openjdk:8-jre docker://registry.cn-hangzhou.aliyuncs.com/mark88015/openjdk:8-jre
         # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
