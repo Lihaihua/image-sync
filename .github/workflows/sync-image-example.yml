@@ -31,5 +31,5 @@ jobs:
           skopeo copy docker://docker.io/library/redis docker://registry.cn-hangzhou.aliyuncs.com/mark88015/redis:latest
           skopeo copy docker://docker.io/library/openjdk:8-jre docker://registry.cn-hangzhou.aliyuncs.com/mark88015/openjdk:8-jre
           skopeo copy docker://docker.io/library/nginx docker://registry.cn-hangzhou.aliyuncs.com/mark88015/nginx:latest
-          skopeo copy docker://docker.io/library/nacos/nacos-server:latest docker://registry.cn-hangzhou.aliyuncs.com/mark88015/nacos/nacos-server:latest
+          skopeo copy --src-creds haih1983@126.com:xuezi1004 docker://docker.io/library/nacos/nacos-server:latest docker://registry.cn-hangzhou.aliyuncs.com/mark88015/nacos/nacos-server:latest
         # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
